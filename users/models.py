@@ -7,5 +7,5 @@ class User(AbstractUser):
     is_applicant = models.BooleanField(default=False)
 
     has_resume = models.BooleanField(default=False)
-    has_company = models.BooleanField(default=True)
+    has_company = models.BooleanField(default=False)
 
