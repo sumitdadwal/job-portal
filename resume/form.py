@@ -2,4 +2,6 @@ from django import forms
 from .models import Resume
 
 class UpdateResumeForm(forms.ModelForm):
-    pass
+    class Meta:
+        model = Resume
+        exclude = ('user',)
